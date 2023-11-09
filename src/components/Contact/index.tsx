@@ -1,17 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
-import { slideIn } from "@/util/motion";
 import ContactForm from "./ContactForm";
 
 type Props = {};
 
 const Contact = (props: Props) => {
-  const [showForm, setShowForm] = useState(false);
-
   return (
     <div className="h-screen relative flex flex-col text-center max-w-7xl justify-evenly mx-auto items-center px-10">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -26,7 +22,7 @@ const Contact = (props: Props) => {
           </div>
           <div className="flex items-center space-x-4 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">jwt3943@naver.com</p>
+            <p className="text-2xl">wjs152828@gmail.com</p>
           </div>
         </div>
         <ContactForm />
